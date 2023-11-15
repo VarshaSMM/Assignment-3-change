@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="head">
+        <nav class="flexbar">
+        <label>Software<span> Company</span></label>
+        <div class="link">
+        <a href="#first">Home</a>
+        <a href="#second">Services</a>
+        <a href="#third">Contact</a>
+    </div>
+    <div class="block">
+        <div class="div-button">
+       <button class="button-humb" onclick="myFunction()">&#9776</button>
+       </div>
+    <nav class="dropdown" id="myLinks" > 
+        <ul>
+            <li><a id="home" class="point">Home</a></li>
+            <li> <a id="service"class="point" >Services</a></li>
+            <li><a id="contact" class="point">Contact us</a></li>
+        </ul>
+    </nav>
+</div>
+    </nav>
+    </header>
+
+
+    <main class="one" id="onemain">
+        
+    <section  class="firstpage" id="first">
+        <h1>WE BUILD YOUR <br>SOFTWARE</h1>
+          </section>
+    </main>
+  
+
+
+
+    <section class="secondpage" id="second" style="display: none;">
+        <h1 class="tagname">Contact us</h1>
+       <h1 class="accordion"> Phone numbers</h1>
+       <div class="panel">
+       <ul>
+        <li>
+TVM: <a>801236482</a>
+        </li>
+        <li>
+Kochi: <a>912312740</a>
+        </li>
+        <li>
+Banglore:<a> 912301344</a>
+        </li>
+       </ul>
+    </div>
+    <h1 class="accordion"> Address</h1>
+       <div class="panel">
+       <ul>
+        <li>
+TVM: Nila Technopark TVM
+        </li>
+        <li>
+Kochi: Infopark kakanad ekm
+        </li>
+        <li>
+Banglore: 
+        </li>
+       </ul>
+    </div>
+       <h1 class="accordion"> Emails</h1>
+       <div class=" panel">
+        <ul>
+      <li><a>hr@seemymachines.com</a></li>
+      <li><a>varsha@gmail.com</a></li>
+    </ul>
+    </div>
+    
+       <h1 class="accordion"> Social meadia</h1>
+       <div class="panel">
+       <ul>
+        <li><a>Instagram</a></li>
+        <li><a>Twitter</a></li>
+        <li><a>Facebook</a></li>
+        <li><a>Linked in</a></li>
+       </ul>
+</div>
+    </section>
+
+
+   <section id="third" style="display: none;">
+        <h1 class="tagname" >Services</h1>
+        
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+            
+              <img class='size'  src="https://api.reliasoftware.com/uploads/the_complete_guide_to_mobile_app_development_2021_ded2abd1b1.png">
+              <div class="text">Mobile Application Development</div>
+            </div>
+            
+            <div class="mySlides fade">
+              
+              <img class='size' src="https://www.articleritz.com/wp-content/uploads/2022/09/it-consulting-services.jpg" >
+              <div class="text">IT Consulting</div>
+            </div>
+            
+            <div class="mySlides fade">
+             
+              <img class='size' src="https://d2ms8rpfqc4h24.cloudfront.net/uploads/2021/08/What-Is-Software-Prototyping.jpg" >
+              <div class="text">Software Prototyping</div>
+            </div>
+            
+            </div>
+    </section>
+
+
+    
+    <footer class="foot">
+        <div>
+        <h3>
+            GET CONNECTED 
+        </h3>
+        <ul>
+            <li>
+                Connectivity 
+            </li>
+            <li>Dashboard</li>
+        </ul>
+    </div>
+    <div>
+        <h3>
+            DEVELOPERS
+        </h3>
+        <ul>
+            <li>
+                Projects 
+            </li>
+            <li>Open Source</li>
+        </ul>
+    </div>
+    <div>
+        <h3>
+            COMPANY 
+        </h3>
+        <ul>
+            <li>
+              About Us
+            </li>
+            <li>Blog</li>
+            <li>Partnerships</li>
+            <li>Careers</li>
+        </ul>
+    </div>
+    <div>
+        <h3>
+            SOCIAL
+        </h3>
+        <ul>
+            <li>
+                Linkedin
+            </li>
+            <li>GitHub</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+        </ul>
+    </div>
+    </footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+    const mainone= document.getElementById('onemain');
+    const sectionone= document.getElementById('first');
+    const sectiontwo= document.getElementById('third');
+    const sectionthree= document.getElementById('second')
+    const service = document.getElementById('service');
+    service.addEventListener('click',function(){
+        sectiontwo.style.display='block';
+        sectionone.style.display='none';
+        sectionthree.style.display='none';
+    });
+
+
+    const home= document.getElementById('home');
+    home.addEventListener('click',function(){
+        sectiontwo.style.display='none';
+        sectionone.style.display='block';
+        sectionthree.style.display='none';
+    });
+
+    const contact= document.getElementById('contact');
+    contact.addEventListener('click',function(){
+        sectiontwo.style.display='none';
+        sectionone.style.display='none';
+        sectionthree.style.display='block';
+     
+    });
+    
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+
+  slides[slideIndex-1].style.display = "block";  
+ 
+  setTimeout(showSlides, 3000); 
+
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(https://directlinedev.com/media/services/service/background/background_16_WabjYvZ.wide.jpeg);
+    font-family: 'Duru Sans', sans-serif;
+}
+.head{
+    color: beige;
+    width: 100wh;
+    height: 65px;
+    background-color: rgb(119, 179, 199);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  
+}
+.link{
+    display: flex;
+gap: 80px;
+margin-top: 10px;
+}
+.head label{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top:20px ;
+    margin-left: 30px;
+  
+}
+.head label span{
+color: rgb(4, 64, 84);
+}
+.head nav a{
+    color: beige;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top:15px ;
+
+}
+.head nav a:hover{
+    color: rgb(58, 87, 97);
+}
+.flexbar{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0% ;
+    
+}
+
+
+.button-humb:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+.button-humb{
+   
+    width: 40px;
+    height: 35px;
+background-color: rgb(2, 60, 114);
+color: beige;
+font-size: 20px;
+border: none;
+border-radius: 7px;
+}
+.div-button{
+    margin-top: 15px;
+    margin-right: 30px;
+     margin-bottom:12px;
+}
+
+.dropdown li{
+   list-style-type: none;
+}
+.dropdown ul{
+   
+    margin-top: 2px;
+padding: 15px 50px 100px 30px;
+text-align: left;
+   background-color: rgba(208, 49, 49,.5);
+   height:100px;
+}
+.dropdown ul li{
+    padding: 15px 30px 15px 30px;
+    text-align: left;
+       color: rgb(255, 254, 254);
+}
+.point{
+    cursor: pointer;
+    
+}
+.point:hover{
+    color: rgb(203, 203, 202);
+}
+.mySlides {display:none;}
+.block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+
+
+} 
+#myLinks{
+    display: none;
+}
+    
+.firstpage{
+    background-color:rgba(195, 195, 166,.2);
+    padding: 20px 20px 20px 20px;
+    color: rgba(208, 49, 49);
+    font-size: 30px;
+    margin: 20% 50% 10% 5%;
+    border-radius: 8px;
+}
+.panel{
+    display: none;
+    background-color:rgba(252, 252, 247, 0.2);
+    color: beige;
+    line-height: 50px;
+    font-size: 18px;
+    margin: 1% 60% 1% 5%;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+
+}
+.panel ul{
+    margin: 0;
+}
+.panel ul li {
+    list-style-type: none;
+    cursor: pointer;
+}
+.accordion{
+    color: beige;
+    font-weight: 100;
+    padding: 15px 20px 15px 20px;
+    background-color: rgba(119, 179, 199,.5);
+    margin: 2% 75% 2% 4%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.accordion:hover{
+    background-color: rgba(119, 179, 199,1);
+}
+.tagname{
+    color: rgba(235, 235, 225,.2);
+    padding: 20px 30px 20px 30px;
+    font-size: 80px;
+  
+}
+.text {
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(218, 74, 74);
+    text-align: center;
+
+}
+.productdiv{
+    background-color:rgba(195, 195, 166,.2);
+    font-size: 14px;
+    margin: 5% 20% 5% 5%;
+    border-radius: 10px;
+    padding: 20px 30px 20px 30px;
+    color: beige;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+    background-image:linear-gradient(to right,rgb(2, 33, 43),rgb(1, 59, 78));
+    color: rgba(240, 240, 231,.7);
+    padding: 70px 30px 70px 30px;
+}
+.foot h3{
+    font-size: 14px;
+    color: rgb(240, 149, 149);
+    font-weight: 100;
+    margin-left: 20px;
+}
+.foot ul li{
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.size{
+width: 850px;
+height: 450px;
+}
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
